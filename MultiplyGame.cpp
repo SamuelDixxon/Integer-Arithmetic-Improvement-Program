@@ -1,5 +1,4 @@
 #include <iostream>
-#include <istream>
 
 using std::cin;
 using std::cout;
