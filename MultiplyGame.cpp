@@ -4,7 +4,8 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-void print_intro() {
+void print_intro()
+{
     cout << "Welcome to the Arithmetic Operator Practice Program" << endl;
     cout << "It is joyous that you are keen on improving your skills in mathematical computation "
             "today!"
@@ -14,7 +15,8 @@ void print_intro() {
          << endl;
 }
 
-void print_options() {
+void print_options()
+{
     std::cout
         << "Please pick one of the following choices. Note for input please just enter a 1, 2, or 3"
         << std::endl;
@@ -23,17 +25,21 @@ void print_options() {
     std::cout << "3. Multiplication" << endl;
 }
 
-int get_choice() {
+//test git
+
+int get_choice()
+{
     int choice;
     cin >> choice;
     return (choice - 1);
 }
 
-int main() {
+int main()
+{
 
     print_intro();
     print_options();
-    int c       = get_choice();
+    int c = get_choice();
     int counter = 0;
     int result, a, b, r11, r12, r21,
         r22; // r r11, r12 : ranges for first number r21, r22 : ranges for the second number
@@ -46,14 +52,17 @@ int main() {
     cout << "Enter the range for the second you'd like to improve your skills in: " << endl;
     cin >> r21 >> r22;
 
-    switch (c) {
+    switch (c)
+    {
     case (0):
-        do {
+        do
+        {
             a = std::rand() % (r12 - r11) + r11;
             b = std::rand() % (r22 - r21) + r21;
             cout << a << " + " << b << " = ?" << endl;
             cin >> result;
-            if (a + b == result) {
+            if (a + b == result)
+            {
                 cout << endl;
                 cout << endl;
                 cout << "Great Job!" << endl;
@@ -64,12 +73,14 @@ int main() {
         break;
 
     case (1):
-        do {
+        do
+        {
             a = std::rand() % (r12 - r11) + r11;
             b = std::rand() % (r22 - r21) + r21;
             cout << a << " - " << b << " = ?" << endl;
             cin >> result;
-            if (a - b == result) {
+            if (a - b == result)
+            {
                 cout << endl;
                 cout << endl;
                 cout << "Great Job!" << endl;
@@ -79,12 +90,14 @@ int main() {
         } while (a - b == result);
 
     case (2):
-        do {
+        do
+        {
             a = std::rand() % (r12 - r11) + r11;
             b = std::rand() % (r22 - r21) + r21;
             cout << a << " * " << b << " = ?" << endl;
             cin >> result;
-            if (a * b == result) {
+            if (a * b == result)
+            {
                 counter++;
                 cout << counter;
                 cout << endl;

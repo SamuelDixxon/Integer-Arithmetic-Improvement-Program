@@ -1,5 +1,7 @@
+all: MultiplyGame
+	
 run: MultiplyGame
 	./MultiplyGame
 
-MultiplyGame: MultiplyGame.cpp
-	g++ -std=c++17 MultiplyGame.cpp -o MultiplyGame
+MultiplyGame:
+	g++ -g -std=c++11 -c MultiplyGame.cpp -o MultiplyGame
