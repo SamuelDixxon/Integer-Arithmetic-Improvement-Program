@@ -38,6 +38,8 @@ int get_choice()
 int main()
 {
 
+    // This is awesome
+
     print_intro();
     print_options();
     int c = get_choice();
