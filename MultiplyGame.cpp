@@ -39,8 +39,8 @@ int main()
     int c = get_choice();
     int counter = 0;
     int result, a, b, r11, r12, r21,
-        r22; // r r11, r12 : ranges for first number r21, r22 : ranges for the second number
-    srand(time(0));
+        r22;        // r r11, r12 : ranges for first number r21, r22 : ranges for the second number
+    srand(time(0)); // generate seed for pseudo-random algorithm
 
     cout << "Enter the range for the first number you'd like to improve your skills "
             "in: "
