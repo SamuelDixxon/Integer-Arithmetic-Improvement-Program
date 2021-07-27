@@ -3,7 +3,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
-// do some test comments here
+
 void print_intro()
 {
     cout << "Welcome to the Arithmetic Operator Practice Program" << endl;
