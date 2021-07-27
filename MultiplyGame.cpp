@@ -3,7 +3,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
-
+// do some test comments here
 void print_intro()
 {
     cout << "Welcome to the Arithmetic Operator Practice Program" << endl;
@@ -25,9 +25,6 @@ void print_options()
     std::cout << "3. Multiplication" << endl;
 }
 
-//test git
-//test 2
-
 int get_choice()
 {
     int choice;
@@ -37,9 +34,6 @@ int get_choice()
 
 int main()
 {
-
-    // This is awesome
-
     print_intro();
     print_options();
     int c = get_choice();
